@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Outfit', 'Inter', system-ui, sans-serif;
+  }
+}
+
+/* Custom Scrollbar Styles for glassmorphic elements */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(168, 85, 247, 0.3);
+}
+
+/* Glassmorphism utility overrides */
+.glass-panel {
+  background: rgba(15, 15, 20, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-input {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-input:focus {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(168, 85, 247, 0.5);
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.15);
+}
+
+/* Brand Logo Glow Effect */
+.logo-glow {
+  filter: drop-shadow(0 0 8px rgba(217, 70, 239, 0.4)) drop-shadow(0 0 20px rgba(168, 85, 247, 0.2));
+}
+
+.logo-glow:hover {
+  filter: drop-shadow(0 0 12px rgba(217, 70, 239, 0.5)) drop-shadow(0 0 30px rgba(168, 85, 247, 0.3));
+}
+
+/* Brand gradient text */
+.text-brand-gradient {
+  background: linear-gradient(135deg, #a855f7 0%, #ec4899 35%, #f97316 65%, #eab308 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Brand border glow */
+.border-brand-glow {
+  border-image: linear-gradient(135deg, rgba(168, 85, 247, 0.4), rgba(236, 72, 153, 0.3), rgba(249, 115, 22, 0.2)) 1;
+}
