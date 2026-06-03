@@ -379,7 +379,7 @@ export default function Popup() {
             <div className="flex items-center justify-between">
               <div className="flex flex-col">
                 <span className="text-xs font-semibold text-zinc-200">Vim Navigation Mode</span>
-                <span className="text-[9px] text-zinc-500">Navigate using j, k, g g, d, u</span>
+                <span className="text-[9px] text-zinc-500">Navigate using j, k, g g, d, u, alt+f</span>
               </div>
               <input
                 type="checkbox"
@@ -422,7 +422,7 @@ export default function Popup() {
 
       {/* Footer copyright and actions */}
       <footer className="border-t border-white/10 px-4 py-2 flex items-center justify-between bg-white/[0.01] text-[10px] text-zinc-500 font-semibold">
-        <span>Version 1.0.0</span>
+        <span>Version 1.0.1</span>
         <button 
           onClick={openDashboard} 
           className="text-accent-fuchsia hover:text-jadu-400 transition-colors"

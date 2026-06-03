@@ -743,7 +743,7 @@ export default function Options() {
                     <div><span className="text-amber-400 font-bold">j / k</span> — Scroll page down / up</div>
                     <div><span className="text-amber-400 font-bold">g g / G</span> — Jump to top / bottom</div>
                     <div><span className="text-amber-400 font-bold">d / u</span> — Half-page down / up</div>
-                    <div><span className="text-amber-400 font-bold">f</span> — Show link-click hint labels</div>
+                    <div><span className="text-amber-400 font-bold">alt + f</span> — Show link-click hint labels</div>
                     <div><span className="text-amber-400 font-bold">Esc</span> — Close palette / dismiss hints</div>
                     <div><span className="text-amber-400 font-bold">h / l</span> — Scroll left / right (if scrollable)</div>
                   </div>
@@ -783,7 +783,7 @@ export default function Options() {
                 <div className="flex items-center justify-between">
                   <div className="flex flex-col">
                     <span className="text-xs font-semibold">Enable Vim Mode</span>
-                    <span className="text-[10px] text-zinc-500 font-medium">Binds Vim navigation (j, k, gg, f hints) globally when inputs are not focused</span>
+                    <span className="text-[10px] text-zinc-500 font-medium">Binds Vim navigation (j, k, gg, alt+f hints) globally when inputs are not focused</span>
                   </div>
                   <input
                     type="checkbox"
@@ -910,7 +910,7 @@ export default function Options() {
                   <span className="text-amber-400 text-sm mt-0.5">✦</span>
                   <div>
                     <span className="text-xs font-semibold text-white">Vim-Style Navigation Everywhere</span>
-                    <p className="text-[11px] text-zinc-500 font-medium mt-0.5">Power users can navigate any page with j/k scrolling, gg/G jumping, and f-key link hints without touching the mouse.</p>
+                    <p className="text-[11px] text-zinc-500 font-medium mt-0.5">Power users can navigate any page with j/k scrolling, gg/G jumping, and Alt+F link hints without touching the mouse.</p>
                   </div>
                 </div>
               </div>
@@ -926,7 +926,7 @@ export default function Options() {
                   { icon: '⌨️', title: 'Custom Keybinds', desc: 'Bind any key combination to any element — click, focus, scroll, or type' },
                   { icon: '🔗', title: 'Workflow Chainer', desc: 'Chain multi-step actions with configurable delays for complex automations' },
                   { icon: '📦', title: 'Marketplace Packs', desc: 'Install pre-made shortcut bundles for popular sites like GitHub and Notion' },
-                  { icon: '🎮', title: 'Vim Navigation', desc: 'j/k scrolling, gg/G jump, half-page d/u, and f-key interactive link hints' },
+                  { icon: '🎮', title: 'Vim Navigation', desc: 'j/k scrolling, gg/G jump, half-page d/u, and Alt+F interactive link hints' },
                   { icon: '💾', title: 'Backup & Restore', desc: 'Export and import your shortcuts as JSON — portable across machines' },
                   { icon: '🎨', title: 'Command Palette', desc: 'Ctrl+K to search, trigger, and manage shortcuts from a beautiful overlay' },
                 ].map((feat, i) => (
@@ -972,7 +972,7 @@ export default function Options() {
 
             {/* Version */}
             <div className="text-center text-[10px] text-zinc-600 font-semibold pb-4">
-              Jadu v1.0.0 · Made with ✨ by Ciphera
+              Jadu v1.0.1 · Made with ✨ by Ciphera
             </div>
           </div>
         )}

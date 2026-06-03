@@ -180,7 +180,7 @@ function handleVimNavigation(
         return true;
       }
       return false;
-    case 'f':
+    case 'alt+f':
       e.preventDefault();
       onVimAction('toggle_hints');
       return true;

@@ -1,6 +1,6 @@
 {
   "name": "jadu",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Premium AI-powered browser extension shortcut manager",
   "main": "dist/background.js",
   "scripts": {

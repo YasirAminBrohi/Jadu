@@ -244,6 +244,20 @@ function handleGlobalKeydown(e: KeyboardEvent) {
     if (bufferTimeout) { clearTimeout(bufferTimeout); bufferTimeout = null; }
     keyBuffer = [];
 
+    // Check Vim Mode modifier triggers first (e.g. alt+f for Vim Link Hints)
+    if (settings.enableVimMode && !isInputFocused && combo === 'alt+f') {
+      e.preventDefault();
+      e.stopPropagation();
+      e.stopImmediatePropagation();
+
+      if ((window as any).JADU_DEBUG) {
+        console.log(`[Jadu Debug] Intercepted Vim command: "toggle_hints"`);
+      }
+      
+      window.dispatchEvent(new CustomEvent('jadu-vim-action', { detail: 'toggle_hints' }));
+      return;
+    }
+
     const matched = activeShortcuts.find(s => s.key.toLowerCase() === combo);
     if (matched) {
       e.preventDefault();
@@ -357,7 +371,6 @@ function handleGlobalKeydown(e: KeyboardEvent) {
         break;
       case 'd': vimAction = 'scroll_page_down'; break;
       case 'u': vimAction = 'scroll_page_up'; break;
-      case 'f': vimAction = 'toggle_hints'; break;
     }
 
     if (vimAction) {

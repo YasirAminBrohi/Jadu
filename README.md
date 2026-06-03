@@ -37,7 +37,7 @@ Power users can traverse any web page using native Vim-style keystrokes (interce
 * `j` / `k` — Scroll down / up.
 * `d` / `u` — Page down / up.
 * `g g` / `Shift+G` — Jump to top / bottom of the page.
-* `f` — Show interactive letter overlay badges on all links (Vimium-style) for keyboard-only clicking.
+* `Alt+F` — Show interactive letter overlay badges on all links (Vimium-style) for keyboard-only clicking.
 
 ### 🎨 7. Command Palette (`Ctrl+K` / `Cmd+K`)
 * A Raycast-like command bar that floats over the active page.
@@ -101,7 +101,7 @@ To run Jadu locally in your browser:
 | **Vim Scroll Up** | `k` | Scrolls up 300px (when inputs aren't focused). |
 | **Vim Jump to Top** | `g g` | Scrolls to the top of the page. |
 | **Vim Jump to Bottom** | `G` | Scrolls to the bottom of the page. |
-| **Vim Link Hints** | `f` | Overlays character badges over links to trigger clicks. |
+| **Vim Link Hints** | `Alt+F` | Overlays character badges over links to trigger clicks. |
 | **Dismiss Overlays** | `Esc` | Closes command palettes, picker overlays, or hints. |
 
 ---
